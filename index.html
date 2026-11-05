@@ -7102,7 +7102,67 @@ body .pd-page .pd-cta h2{max-width:690px;font-size:30px;line-height:1.5!importan
 #page-news #news115Local{font-size:13px;color:#60768d}
 #page-news #news115Local[hidden]{display:none}
 @media(max-width:640px){#page-news .news115-actions{flex-direction:column}#page-news .news115-actions a,#page-news .news115-actions button{width:100%}}
-</style></head>
+</style>
+<style id="home-shared-store-map-v120">
+#page-home .hp97-map-panel{height:580px;background:#eff7fc;border-radius:18px;border:1px solid #d2e5f4}
+#page-home .hp120-map-host{height:100%;min-width:0}
+#page-home .hp120-map-host>.store67-country-wrap{height:100%;min-height:0;border:0;border-radius:18px;background:linear-gradient(160deg,#eff9ff,#e0f1fe)}
+#page-home .store67-country-stage{right:43%}
+#page-home .store67-country{width:calc(100% - 26px);max-width:280px;min-width:0}
+#page-home .store67-map-title{left:14px;top:14px;border-radius:12px;font-weight:600;color:#154a83;padding:9px 12px}
+#page-home .store68-controls{flex-direction:row;right:14px;top:14px;gap:6px}
+#page-home .store68-control{width:36px;height:36px;font-family:inherit;color:#104b87;box-shadow:0 3px 8px #24547712;font-weight:500}
+#page-home .store68-zoom-label{right:14px;bottom:14px}
+#page-home .hp97-store-card{right:14px;top:85px;width:43%;max-width:43%;padding:24px 16px 18px;z-index:25}
+#page-home .hp97-map-caption{left:14px;bottom:14px;z-index:21;pointer-events:none}
+@media(max-width:760px){
+ #page-home .hp97-map-panel{height:auto;min-height:560px;padding-bottom:0;overflow:hidden}
+ #page-home .hp120-map-host{height:560px}
+ #page-home .store67-country-stage{inset:0}
+ #page-home .store67-country{width:calc(100% - 70px);max-width:260px}
+ #page-home .hp97-store-card{position:relative;inset:auto;width:auto;max-width:none;margin:0 12px 12px;padding:24px 18px 18px}
+ #page-home .hp97-store-card h3{font-size:18px}
+ #page-home .hp97-store-card p{font-size:13px}
+ #page-home .hp97-card-actions a{font-size:12px}
+ #page-home .hp97-map-caption{top:521px;bottom:auto}
+}
+</style>
+
+<style id="home-province-store-list-v121">
+#page-home .hp97-store-card{top:72px;max-height:calc(100% - 118px);padding:20px 13px 14px;display:flex;flex-direction:column;overflow:auto}
+#page-home .hp121-list-heading{display:flex;flex-direction:column;gap:3px;padding-right:19px;flex-shrink:0;color:#154a83}
+#page-home .hp121-list-heading span{font-size:10px;line-height:1.5;color:#597791}
+#page-home .hp121-list-heading strong{font-size:16px;line-height:1.5;font-weight:600}
+#page-home .hp121-list-hint{font-size:10px;line-height:1.5;margin:3px 0 9px;color:#60768d;flex-shrink:0}
+#page-home .hp121-store-list{max-height:190px;min-height:80px;overflow:auto;overscroll-behavior:contain;border-block:1px solid #e2edf5;scrollbar-width:thin;scrollbar-color:#bed5e7 transparent}
+#page-home .hp121-store-row{display:grid;grid-template-columns:22px minmax(0,1fr);align-items:start;gap:7px;width:100%;text-align:left;padding:11px 5px;background:#fff;border:0;border-bottom:1px solid #e9f0f6;border-radius:0;cursor:pointer;font-family:inherit;color:#153f70}
+#page-home .hp121-store-row:last-child{border-bottom:0}
+#page-home .hp121-store-row:hover,#page-home .hp121-store-row.active{background:#edf6ff}
+#page-home .hp121-store-row:focus-visible{outline:2px solid #0964b9;outline-offset:-2px}
+#page-home .hp121-store-row strong{display:block;font-size:12px;line-height:1.55;font-weight:600;overflow-wrap:anywhere}
+#page-home .hp121-store-row small{display:block;margin-top:3px;font-size:10px;line-height:1.5;color:#60768d;overflow-wrap:anywhere}
+#page-home .hp121-store-number{display:grid;place-items:center;border-radius:50%;width:22px;height:22px;background:#e0effc;color:#0964b9;font-size:10px}
+#page-home .hp121-store-detail{padding:13px 3px 0;flex-shrink:0}
+#page-home .hp121-store-detail .hp97-card-tag{font-size:9px;margin-bottom:5px}
+#page-home .hp121-store-detail h3{font-size:14px;line-height:1.5!important;margin-bottom:6px}
+#page-home .hp121-store-detail p{font-size:10px;line-height:1.6;margin-bottom:5px}
+#page-home .hp121-store-detail .hp97-card-actions{gap:6px;margin-top:9px}
+#page-home .hp121-store-detail .hp97-card-actions a{font-size:10px;padding:8px 10px}
+@media(max-width:760px){
+ #page-home .hp97-store-card{top:auto;max-height:none;padding:24px 17px 18px}
+ #page-home .hp121-store-list{max-height:270px;min-height:80px}
+ #page-home .hp121-list-heading span,#page-home .hp121-list-hint{font-size:12px}
+ #page-home .hp121-list-heading strong{font-size:20px}
+ #page-home .hp121-store-row{grid-template-columns:28px minmax(0,1fr);gap:9px;padding:13px 7px}
+ #page-home .hp121-store-row strong{font-size:15px}
+ #page-home .hp121-store-row small{font-size:12px}
+ #page-home .hp121-store-number{width:27px;height:27px;font-size:12px}
+ #page-home .hp121-store-detail h3{font-size:18px}
+ #page-home .hp121-store-detail p,#page-home .hp121-store-detail .hp97-card-actions a{font-size:12px}
+ #page-home .hp121-store-detail .hp97-card-tag{font-size:11px}
+}
+</style>
+</head>
 <body>
 <div class="shell">
   <div class="nav-wrap">
@@ -7242,7 +7302,7 @@ body .pd-page .pd-cta h2{max-width:690px;font-size:30px;line-height:1.5!importan
 <section class="hp97-trust hp97-wrap" aria-label="คุณค่าของ CROSS SUPER"><div class="hp97-trust-item"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="20" r="12"/><path d="m16 30-4 14 12-6 12 6-4-14M19 20l4 4 7-9"/></svg><p>ประสบการณ์<br>ยาวนานกว่า 60 ปี</p></div><div class="hp97-trust-item"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 5h12M20 5v14L9 40h30L28 19V5M14 30h20M18 27h1M26 34h1"/></svg><p>มาตรฐานการผลิต<br>ที่เชื่อถือได้</p></div><div class="hp97-trust-item"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 4 40 11v12c0 10-8 17-16 21C16 40 8 33 8 23V11zM16 23l6 6 12-14"/></svg><p>ใส่ใจคุณภาพ<br>และการใช้งาน</p></div><div class="hp97-trust-item"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M40 6C18 4 6 17 10 31s28 11 30-25ZM9 43l23-25M18 34l-1-11M27 25h10"/></svg><p>ใส่ใจสิ่งแวดล้อม<br>และความยั่งยืน</p></div></section>
 <section class="hp97-products hp97-wrap" aria-labelledby="hp97-products-title"><header class="hp97-products-head"><div><span class="hp97-kicker">OUR PRODUCTS</span><h2 id="hp97-products-title">ผลิตภัณฑ์ของเรา</h2><i class="hp97-red-line" aria-hidden="true"></i></div><p>ครบทุกความต้องการด้านความสะอาด<br>สำหรับบ้านและครอบครัว</p><a class="hp97-button hp97-outline" href="#products" data-route="products">ดูสินค้าทั้งหมด<span aria-hidden="true">›</span></a></header><div class="hp97-category-grid"><a class="hp97-category" href="#product-laundry" data-route="product-laundry"><div class="hp97-category-photo"><img src="media-031.webp" alt="ผลิตภัณฑ์ ซักผ้า" width="800" height="1000" loading="lazy" decoding="async"></div><div class="hp97-category-label"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="5" width="30" height="39" rx="2"/><circle cx="24" cy="28" r="10"/><path d="M9 14h30M15 10h1M20 10h1M17 28c4-5 9 5 14 0"/></svg><h3>ผลิตภัณฑ์<br>ซักผ้า</h3></div></a><a class="hp97-category" href="#product-softener" data-route="product-softener"><div class="hp97-category-photo"><img src="media-033.webp" alt="ผลิตภัณฑ์ ปรับผ้านุ่ม" width="800" height="1000" loading="lazy" decoding="async"></div><div class="hp97-category-label"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 10h32v30H8zM8 21c9-7 15 7 24 0l8-3M16 10v30M32 10v30"/></svg><h3>ผลิตภัณฑ์<br>ปรับผ้านุ่ม</h3></div></a><a class="hp97-category" href="#product-iron" data-route="product-iron"><div class="hp97-category-photo"><img src="media-030.webp" alt="ผลิตภัณฑ์ รีดผ้าเรียบ" width="800" height="1000" loading="lazy" decoding="async"></div><div class="hp97-category-label"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 36h35l-4-17H20L7 29zM19 19v-6h15l4 6M10 41h30"/></svg><h3>ผลิตภัณฑ์<br>รีดผ้าเรียบ</h3></div></a><a class="hp97-category" href="#product-dish" data-route="product-dish"><div class="hp97-category-photo"><img src="media-028.webp" alt="ผลิตภัณฑ์ ล้างจาน" width="800" height="1000" loading="lazy" decoding="async"></div><div class="hp97-category-label"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="11"/><path d="m35 5 2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg><h3>ผลิตภัณฑ์<br>ล้างจาน</h3></div></a><a class="hp97-category" href="#product-refresher" data-route="product-refresher"><div class="hp97-category-photo"><img src="media-032.webp" alt="ผลิตภัณฑ์ ฉีดผ้าหอม" width="800" height="1000" loading="lazy" decoding="async"></div><div class="hp97-category-label"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18h26a6 6 0 1 0-6-6M6 25h33a5 5 0 1 1-5 5M10 33h12a5 5 0 1 1-5 5"/></svg><h3>ผลิตภัณฑ์<br>ฉีดผ้าหอม</h3></div></a><a class="hp97-category" href="#product-toilet" data-route="product-toilet"><div class="hp97-category-photo"><img src="media-034.webp" alt="ผลิตภัณฑ์ทำความสะอาด ห้องน้ำ" width="800" height="1000" loading="lazy" decoding="async"></div><div class="hp97-category-label"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 25h36v8a9 9 0 0 1-9 9H15a9 9 0 0 1-9-9zM10 25V10a6 6 0 0 1 12 0v3M16 13h12M19 17v2M25 17v2M13 42v3M35 42v3"/></svg><h3>ผลิตภัณฑ์ทำความสะอาด<br>ห้องน้ำ</h3></div></a><a class="hp97-category" href="#product-floor" data-route="product-floor"><div class="hp97-category-photo"><img src="media-029.webp" alt="ผลิตภัณฑ์ ถูพื้น / ดันฝุ่น" width="800" height="1000" loading="lazy" decoding="async"></div><div class="hp97-category-label"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m33 4-12 27M10 30l25 8-3 9-25-8zM14 34l-3 8M21 36l-3 8M28 38l-3 8"/></svg><h3>ผลิตภัณฑ์<br>ถูพื้น / ดันฝุ่น</h3></div></a></div></section>
 <section class="hp97-story" aria-labelledby="hp97-story-title"><div class="hp97-wrap hp97-story-grid"><div class="hp97-story-copy"><span class="hp97-kicker">OUR STORY</span><h2 id="hp97-story-title">เส้นทางกว่า 60 ปี<br>ของ ครอส ซูเปอร์</h2><i class="hp97-red-line" aria-hidden="true"></i><p>แบรนด์ผลิตภัณฑ์ทำความสะอาดของคนไทย<br>ที่เติบโตเคียงข้างครัวเรือนไทยมาอย่างยาวนาน</p><a class="hp97-button" href="#about" data-route="about">เกี่ยวกับเรา<span aria-hidden="true">›</span></a></div><figure class="hp97-story-image"><img src="media-040.webp" alt="อาคารบริษัท ครอสซุปเปอร์ โปรดักซ์ แอนด์ แพ็คกิ้ง จำกัด" width="1672" height="941" loading="lazy"><figcaption>CROSS SUPER <span>เคียงข้างครัวเรือนไทย</span></figcaption></figure><ol class="hp97-timeline"><li><strong>พ.ศ. 2505 <span>(1962)</span></strong><p>จุดเริ่มต้นของธุรกิจในครอบครัว</p></li><li><strong>พ.ศ. 2516 <span>(1973)</span></strong><p>มุ่งพัฒนาผลิตภัณฑ์ซักผ้า CROSS SUPER</p></li><li><strong>พ.ศ. 2530 – ปัจจุบัน</strong><p>ขยายผลิตภัณฑ์ครอบคลุม<br>การดูแลบ้านทุกประเภท</p></li></ol></div><svg class="hp97-story-wave" viewBox="0 0 1440 45" preserveAspectRatio="none" aria-hidden="true"><path fill="#ec123a" d="M260 45c300-100 400-20 600-18l-20 18Z"/><path fill="#fff" d="M0 33c430 38 660-52 1020-12s310-5 420-13v37H0Z"/></svg></section>
-<section class="hp97-stores" aria-labelledby="hp97-store-title"><div class="hp97-wrap hp97-store-grid"><div class="hp97-store-copy"><h2 id="hp97-store-title">ค้นหาร้านค้าใกล้คุณ</h2><i class="hp97-red-line" aria-hidden="true"></i><p>ครอส ซูเปอร์ อยู่ใกล้คุณมากกว่าที่คิด<br>ค้นหาร้านจำหน่ายทั่วประเทศไทย</p><form id="hp97StoreForm" class="hp97-search-form"><label class="hp97-select-label" for="hp97Province"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M38 20c0 11-14 24-14 24S10 31 10 20a14 14 0 0 1 28 0Z"/><circle cx="24" cy="19" r="5"/></svg><select id="hp97Province" aria-label="เลือกจังหวัด"><option value="">เลือกจังหวัด</option></select></label><button type="submit"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="20" r="12"/><path d="m29 29 12 12"/></svg>ค้นหาร้านค้า</button></form><a class="hp97-store-all" href="#stores" data-route="stores" data-hp97-all-stores>ดูร้านค้าทั้งหมด <span aria-hidden="true">→</span></a><div class="hp97-store-points"><div><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M38 20c0 11-14 24-14 24S10 31 10 20a14 14 0 0 1 28 0Z"/><circle cx="24" cy="19" r="5"/></svg><span>ค้นหาง่าย<br>ใกล้บ้านคุณ</span></div><div><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 19h34L37 7H11zM10 19v24h28V19M18 43V29h12v14M6 19v3a5 5 0 0 0 9 3 5 5 0 0 0 9 0 5 5 0 0 0 9 0 5 5 0 0 0 9-3v-3"/></svg><span><b id="hp97ShopCount">255</b> ร้านค้า<br>ทั่วประเทศไทย</span></div><div><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 24h34M29 12l12 12-12 12"/></svg><span>เปิดเส้นทาง<br>ผ่าน Google Maps</span></div></div></div><div class="hp97-map-panel" aria-label="แผนที่เครือข่ายร้านค้า CROSS SUPER"><div class="hp97-map-country"><img src="media-041.svg" alt="แผนที่ประเทศไทย" width="350" height="626"><div id="hp97MapPins"></div></div><span class="hp97-map-caption">เครือข่ายร้านค้า CROSS SUPER</span><article class="hp97-store-card" id="hp97StoreCard" aria-live="polite"></article></div></div></section>
+<section class="hp97-stores" aria-labelledby="hp97-store-title"><div class="hp97-wrap hp97-store-grid"><div class="hp97-store-copy"><h2 id="hp97-store-title">ค้นหาร้านค้าใกล้คุณ</h2><i class="hp97-red-line" aria-hidden="true"></i><p>ครอส ซูเปอร์ อยู่ใกล้คุณมากกว่าที่คิด<br>ค้นหาร้านจำหน่ายทั่วประเทศไทย</p><form id="hp97StoreForm" class="hp97-search-form"><label class="hp97-select-label" for="hp97Province"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M38 20c0 11-14 24-14 24S10 31 10 20a14 14 0 0 1 28 0Z"/><circle cx="24" cy="19" r="5"/></svg><select id="hp97Province" aria-label="เลือกจังหวัด"><option value="">เลือกจังหวัด</option></select></label><button type="submit"><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="20" r="12"/><path d="m29 29 12 12"/></svg>ค้นหาร้านค้า</button></form><a class="hp97-store-all" href="#stores" data-route="stores" data-hp97-all-stores>ดูร้านค้าทั้งหมด <span aria-hidden="true">→</span></a><div class="hp97-store-points"><div><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M38 20c0 11-14 24-14 24S10 31 10 20a14 14 0 0 1 28 0Z"/><circle cx="24" cy="19" r="5"/></svg><span>ค้นหาง่าย<br>ใกล้บ้านคุณ</span></div><div><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 19h34L37 7H11zM10 19v24h28V19M18 43V29h12v14M6 19v3a5 5 0 0 0 9 3 5 5 0 0 0 9 0 5 5 0 0 0 9 0 5 5 0 0 0 9-3v-3"/></svg><span><b id="hp97ShopCount">255</b> ร้านค้า<br>ทั่วประเทศไทย</span></div><div><svg class="hp97-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 24h34M29 12l12 12-12 12"/></svg><span>เปิดเส้นทาง<br>ผ่าน Google Maps</span></div></div></div><div class="hp97-map-panel" aria-label="แผนที่เครือข่ายร้านค้า CROSS SUPER"><div id="hp120MapHost" class="hp120-map-host"></div><span class="hp97-map-caption">เครือข่ายร้านค้า CROSS SUPER</span><article class="hp97-store-card" id="hp97StoreCard" aria-live="polite"></article></div></div></section>
 <section class="hp97-news hp97-wrap" aria-labelledby="hp97-news-title"><header><h2 id="hp97-news-title">ข่าวสารและกิจกรรม</h2><p>อัปเดตเรื่องราวล่าสุดจากครอส ซูเปอร์</p><a class="hp97-button hp97-outline" href="#news" data-route="news">ดูทั้งหมด<span aria-hidden="true">›</span></a></header><div class="hp97-news-grid"><a class="hp97-news-card" href="#news" data-route="news"><img src="media-037.webp" alt="การดูแลบ้านและเสื้อผ้า" width="800" height="480" loading="lazy" decoding="async"><div><span>การดูแลบ้านและเสื้อผ้า</span><h3>เรื่องราวความสะอาดที่อยู่ใกล้ตัวคุณ</h3></div></a><a class="hp97-news-card" href="#news" data-route="news"><img src="media-038.webp" alt="ข่าวสารจาก CROSS SUPER" width="800" height="480" loading="lazy" decoding="async"><div><span>ข่าวสารจาก CROSS SUPER</span><h3>ติดตามข้อมูลผลิตภัณฑ์และความเคลื่อนไหว</h3></div></a><a class="hp97-news-card" href="#news" data-route="news"><img src="media-039.webp" alt="กิจกรรมและเรื่องราวของแบรนด์" width="800" height="480" loading="lazy" decoding="async"><div><span>กิจกรรมและเรื่องราวของแบรนด์</span><h3>อัปเดตเรื่องราวจากครอส ซูเปอร์</h3></div></a></div></section>
 </main>
 
@@ -8657,43 +8717,88 @@ body .pd-page .pd-cta h2{max-width:690px;font-size:30px;line-height:1.5!importan
  const updateToggle=()=>{toggle.textContent=video.paused?'▶':'Ⅱ';toggle.setAttribute('aria-label',video.paused?'เล่นวิดีโอ':'พักวิดีโอ')};
  video.addEventListener('play',updateToggle);video.addEventListener('pause',updateToggle);
  new MutationObserver(syncVideo).observe(root,{attributes:true,attributeFilter:['class']});document.addEventListener('visibilitychange',syncVideo);syncVideo();
- const stores=JSON.parse(document.getElementById('hp97-store-data').textContent),select=document.getElementById('hp97Province'),pins=document.getElementById('hp97MapPins'),card=document.getElementById('hp97StoreCard');
+ const stores=JSON.parse(document.getElementById('hp97-store-data').textContent),select=document.getElementById('hp97Province'),pins=document.getElementById('store67Markers'),card=document.getElementById('hp97StoreCard');
  const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
  const provinces=[...new Set(stores.map(s=>s.province).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'th'));
  provinces.forEach(province=>{const option=document.createElement('option');option.value=province;option.textContent=province;select.appendChild(option)});
  document.getElementById('hp97ShopCount').textContent=stores.length;
  let selectedId;
+ function renderStoreList(data){
+  card.innerHTML=`<button class="hp97-card-close" type="button" aria-label="ปิดรายชื่อร้านค้า">×</button><div class="hp121-list-heading"><span>ร้านค้าที่จำหน่าย · ${esc(select.value||'ทั่วประเทศไทย')}</span><strong>${data.length} ร้านค้า</strong></div><p class="hp121-list-hint">เลื่อนดูรายชื่อและกดเลือกร้านค้า</p><div class="hp121-store-list" role="group" aria-label="รายชื่อร้านค้า${esc(select.value||'ทั่วประเทศไทย')}">${data.map((s,i)=>`<button class="hp121-store-row" type="button" data-home-store-select="${s.id}" aria-pressed="false"><span class="hp121-store-number">${i+1}</span><span><strong>${esc(s.name)}</strong><small>${esc(s.address)}</small></span></button>`).join('')}</div><div class="hp121-store-detail" aria-live="polite"></div>`;
+  card.querySelector('.hp97-card-close').addEventListener('click',()=>card.hidden=true);
+ }
  function showStore(s){
+  if(!s)return;
   selectedId=s.id;card.hidden=false;
   const map='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.name+' '+s.address);
-  card.innerHTML=`<button class="hp97-card-close" type="button" aria-label="ปิดรายละเอียดร้านค้า">×</button><span class="hp97-card-tag">ร้านค้าที่จำหน่าย · ${esc(s.province)}</span><h3>${esc(s.name)}</h3><p>${esc(s.address)}</p>${s.phone?`<p>โทร. ${esc(s.phone)}</p>`:''}<div class="hp97-card-actions"><a href="#stores" data-route="stores" data-hp97-store="${s.id}">ดูร้านค้า</a><a href="${map}" target="_blank" rel="noopener">เปิด Google Maps</a></div>`;
-  card.querySelector('button').addEventListener('click',()=>card.hidden=true);
-  pins.querySelectorAll('button').forEach(x=>x.classList.toggle('active',Number(x.dataset.store)===s.id));
+  card.querySelector('.hp121-store-detail').innerHTML=`<span class="hp97-card-tag">รายละเอียดร้านค้า · ${esc(s.province)}</span><h3>${esc(s.name)}</h3><p>${esc(s.address)}</p>${s.phone?`<p>โทร. ${esc(s.phone)}</p>`:''}<div class="hp97-card-actions"><a href="#stores" data-route="stores" data-hp97-store="${s.id}">ดูร้านค้า</a><a href="${map}" target="_blank" rel="noopener">เปิด Google Maps</a></div>`;
+  card.querySelectorAll('[data-home-store-select]').forEach(row=>{
+   const active=Number(row.dataset.homeStoreSelect)===s.id;
+   row.classList.toggle('active',active);row.setAttribute('aria-pressed',String(active));
+  });
+  pins.querySelectorAll('button').forEach(x=>x.classList.toggle('active',Number(x.dataset.id)===s.id));
  }
+ // Reuse the approved Store Locator viewport and its original listeners.
+ const viewport=document.getElementById('store68Viewport');
+ const mapHost=document.getElementById('hp120MapHost');
+ const nativeProvince=document.getElementById('store67Province');
+ const nativeSearch=document.getElementById('store67Search');
+ const nativeCount=document.getElementById('store67Count');
+ const mapAnchor=document.createComment('Shared Store Locator map position');
+ viewport.before(mapAnchor);
+ function syncMapCount(){
+  root.querySelector('.hp97-map-caption').textContent=nativeCount.textContent;
+ }
+ new MutationObserver(syncMapCount).observe(nativeCount,{childList:true,characterData:true,subtree:true});
  function renderPins(){
-  const filtered=stores.filter(s=>!select.value||s.province===select.value),byProvince=new Map();
-  filtered.forEach(s=>{if(!byProvince.has(s.province))byProvince.set(s.province,s)});
-  pins.replaceChildren();
-  const visible=[];
-  byProvince.forEach(s=>{if(visible.some(v=>Math.hypot((v.mapX-s.mapX)*2.2,(v.mapY-s.mapY)*3.96)<23))return;visible.push(s);const pin=document.createElement('button');pin.type='button';pin.className='hp97-map-pin';pin.dataset.store=s.id;pin.style.setProperty('--pin-x',s.mapX+'%');pin.style.setProperty('--pin-y',s.mapY+'%');pin.setAttribute('aria-label','ดูร้านค้าในจังหวัด'+s.province);pin.title=s.province;pin.addEventListener('click',()=>showStore(s));pins.appendChild(pin)});
-  showStore(filtered.find(s=>s.province==='กรุงเทพมหานคร')||filtered[0]);
+  document.querySelector('#store67Regions [data-region=""]')?.click();
+  nativeSearch.value='';
+  nativeProvince.value=select.value;
+  nativeProvince.dispatchEvent(new Event('change',{bubbles:true}));
+  const filtered=stores.filter(s=>!select.value||s.province===select.value);
+  renderStoreList(filtered);
+  const initial=filtered.find(s=>s.id===selectedId)||filtered.find(s=>s.province==='กรุงเทพมหานคร')||filtered[0];
+  card.hidden=true;
+  if(initial)pins.querySelector(`[data-id="${initial.id}"]`)?.click();
+  syncMapCount();
  }
+ function syncMapMount(){
+  if(root.classList.contains('active')){
+   if(viewport.parentNode!==mapHost){
+    mapHost.appendChild(viewport);
+    select.value=nativeProvince.value;
+    renderPins();
+   }
+  }else if(viewport.parentNode===mapHost){
+   mapAnchor.after(viewport);
+  }
+ }
+ viewport.addEventListener('click',event=>{
+  if(!root.classList.contains('active'))return;
+  const pin=event.target.closest('.store67-marker');
+  if(pin)showStore(stores.find(s=>s.id===Number(pin.dataset.id)));
+ });
+ new MutationObserver(syncMapMount).observe(root,{attributes:true,attributeFilter:['class']});
  function openStoreRoute(province,id){
   showRoute('stores');
+  syncMapMount();
   const search=document.getElementById('store67Search'),provinceControl=document.getElementById('store67Province');
   document.querySelector('#store67Regions [data-region=""]')?.click();
-  search.value='';search.dispatchEvent(new Event('input',{bubbles:true}));
+  search.value='';
   provinceControl.value=province||'';provinceControl.dispatchEvent(new Event('change',{bubbles:true}));
   if(id)document.querySelector(`.store67-marker[data-id="${Number(id)}"]`)?.click();
  }
  select.addEventListener('change',renderPins);
  document.getElementById('hp97StoreForm').addEventListener('submit',event=>{event.preventDefault();openStoreRoute(select.value)});
  root.addEventListener('click',event=>{
+  const row=event.target.closest('[data-home-store-select]');
+  if(row){pins.querySelector(`[data-id="${Number(row.dataset.homeStoreSelect)}"]`)?.click();return;}
   const details=event.target.closest('[data-hp97-store]'),all=event.target.closest('[data-hp97-all-stores]');
   if(details){const s=stores.find(s=>s.id===Number(details.dataset.hp97Store));queueMicrotask(()=>openStoreRoute(s?.province,s?.id))}
   if(all)queueMicrotask(()=>openStoreRoute(''));
  });
- renderPins();
+ card.hidden=true;
+ syncMapMount();
 })();
 </script>
 <script id="laundry-ui-v100">(() => {
