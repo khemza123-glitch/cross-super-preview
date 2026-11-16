@@ -1,17 +1,28 @@
 (() => {
+  // cms/editor-link.js
+  function editorAccess(href, storedKey) {
+    const url = new URL(href), provided = new URLSearchParams(url.hash.slice(1)).get("key");
+    const key2 = provided || storedKey || null;
+    if (key2) url.hash = new URLSearchParams({ key: key2 }).toString();
+    return { key: key2, provided, url: key2 ? url.href : null };
+  }
+
   // cms/gateway.js
   var config = window.CSCMS_CONFIG;
-  var key = new URLSearchParams(location.hash.slice(1)).get("key");
-  if (key) {
-    sessionStorage.setItem("cross-super-editor-key", key);
-    history.replaceState(null, "", location.pathname + location.search);
-  } else key = sessionStorage.getItem("cross-super-editor-key");
+  var access = editorAccess(location.href, sessionStorage.getItem("cross-super-editor-key"));
+  var key = access.key;
+  if (access.provided) sessionStorage.setItem("cross-super-editor-key", key);
+  if (access.url && access.url !== location.href) history.replaceState(null, "", access.url);
   function hasEditorLink() {
     return !!key;
+  }
+  function editorShareLink() {
+    return editorAccess(location.href, key).url;
   }
   function forgetEditorLink() {
     key = null;
     sessionStorage.removeItem("cross-super-editor-key");
+    history.replaceState(null, "", location.pathname + location.search);
   }
   async function api(action, payload = {}, file = null) {
     if (!key) throw Error("\u0E01\u0E23\u0E38\u0E13\u0E32\u0E40\u0E1B\u0E34\u0E14\u0E08\u0E32\u0E01\u0E25\u0E34\u0E07\u0E01\u0E4C\u0E1C\u0E39\u0E49\u0E14\u0E39\u0E41\u0E25\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A");
@@ -95,6 +106,22 @@
     clearTimeout(toast.timer);
     toast.timer = setTimeout(() => $("toast").hidden = true, 7e3);
   }
+  $("copy-editor-link").onclick = async () => {
+    const link = editorShareLink();
+    if (!link) {
+      toast("\u0E01\u0E23\u0E38\u0E13\u0E32\u0E40\u0E1B\u0E34\u0E14\u0E08\u0E32\u0E01\u0E25\u0E34\u0E07\u0E01\u0E4C\u0E1C\u0E39\u0E49\u0E14\u0E39\u0E41\u0E25\u0E09\u0E1A\u0E31\u0E1A\u0E40\u0E15\u0E47\u0E21");
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(link);
+      toast("\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E25\u0E34\u0E07\u0E01\u0E4C\u0E1C\u0E39\u0E49\u0E14\u0E39\u0E41\u0E25\u0E09\u0E1A\u0E31\u0E1A\u0E40\u0E15\u0E47\u0E21\u0E41\u0E25\u0E49\u0E27 \u0E2A\u0E48\u0E07\u0E25\u0E34\u0E07\u0E01\u0E4C\u0E19\u0E35\u0E49\u0E43\u0E2B\u0E49\u0E1C\u0E39\u0E49\u0E41\u0E01\u0E49\u0E44\u0E02\u0E40\u0E27\u0E47\u0E1A\u0E44\u0E0B\u0E15\u0E4C\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22");
+    } catch {
+      $("share-link-value").value = link;
+      $("share-dialog").showModal();
+      $("share-link-value").focus();
+      $("share-link-value").select();
+    }
+  };
   function message(e) {
     if (e?.code === "40001") return "\u0E21\u0E35\u0E1C\u0E39\u0E49\u0E14\u0E39\u0E41\u0E25\u0E1A\u0E31\u0E19\u0E17\u0E36\u0E01\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E43\u0E2B\u0E21\u0E48 \u0E01\u0E23\u0E38\u0E13\u0E32\u0E42\u0E2B\u0E25\u0E14\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E25\u0E48\u0E32\u0E2A\u0E38\u0E14\u0E01\u0E48\u0E2D\u0E19\u0E1A\u0E31\u0E19\u0E17\u0E36\u0E01\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07";
     if (/invalid login/i.test(e?.message)) return "\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E2B\u0E23\u0E37\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E21\u0E48\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07";
